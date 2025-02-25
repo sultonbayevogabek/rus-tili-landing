@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Rus tili</title>
+</head>
+<body>
+
+<div class="wrapper flex flex-col gap-[100px] pt-[8px] 800px:pt-[16px] 1200px:pt-[20px]">
+   <header
+      class="flex justify-between items-center rounded-full custom-shadow py-2 px-4 800px:py-2.5 800px:px-5 1200px:px-6 1200px:py-3 border border-[#E1E8EE]">
+      <img class="w-[150px] 800px:w-[180px] 1200px:w-[205px]" src="img/logo.svg" alt="">
+
+      <div class="hidden 1100px:flex items-center gap-13">
+         <a href="#">Kurs kimlar uchun?</a>
+         <a href="#">Izohlar</a>
+         <a href="#">Tariflar</a>
+         <a href="#">FAQ</a>
+      </div>
+
+      <a class="hidden 1100px:flex items-center gap-2" href="tel:+998976282882">
+         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+               d="M20.6286 22C18.1898 22 15.7397 21.433 13.2783 20.2989C10.8171 19.1648 8.55369 17.5651 6.48806 15.4996C4.43084 13.434 2.8352 11.1725 1.70112 8.71524C0.567039 6.25814 0 3.81021 0 1.37144C0 0.983206 0.129412 0.65752 0.388235 0.394382C0.647059 0.131461 0.970588 0 1.35882 0H5.57959C5.90635 0 6.19462 0.106657 6.44438 0.319971C6.69415 0.533069 6.853 0.796422 6.92094 1.11003L7.66279 4.91765C7.71413 5.27094 7.70334 5.57452 7.63044 5.82838C7.55732 6.08225 7.42619 6.29545 7.23703 6.468L4.24826 9.3775C4.72925 10.2584 5.27881 11.0917 5.89697 11.8774C6.51491 12.6629 7.18397 13.4132 7.90415 14.1282C8.61419 14.8385 9.36909 15.498 10.1689 16.1069C10.9686 16.7158 11.8322 17.2824 12.7597 17.8067L15.6637 14.8775C15.8662 14.6668 16.1114 14.519 16.3994 14.4343C16.6871 14.3497 16.9862 14.329 17.2965 14.3721L20.89 15.104C21.2167 15.1902 21.4834 15.357 21.6901 15.6041C21.8967 15.8513 22 16.1317 22 16.4453V20.6412C22 21.0294 21.8685 21.3529 21.6056 21.6118C21.3425 21.8706 21.0168 22 20.6286 22Z"
+               fill="#00B430"/>
+         </svg>
+
+         <span class="font-medium">+998 97 628 28 82</span>
+      </a>
+
+      <svg id="hamburger" class="block 1100px:hidden w-5 cursor-pointer" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M15.75 6C15.75 5.5858 15.4142 5.25 15 5.25H1C0.58579 5.25 0.25 5.5858 0.25 6C0.25 6.4142 0.58579 6.75 1 6.75H15C15.4142 6.75 15.75 6.4142 15.75 6Z"
+               fill="black"/>
+         <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M15.75 1C15.75 0.58579 15.4142 0.25 15 0.25H1C0.58579 0.25 0.25 0.58579 0.25 1C0.25 1.41421 0.58579 1.75 1 1.75H15C15.4142 1.75 15.75 1.41421 15.75 1Z"
+               fill="black"/>
+         <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M15.75 11C15.75 10.5858 15.4142 10.25 15 10.25H1C0.58579 10.25 0.25 10.5858 0.25 11C0.25 11.4142 0.58579 11.75 1 11.75H15C15.4142 11.75 15.75 11.4142 15.75 11Z"
+               fill="black"/>
+      </svg>
+   </header>
+</div>
+
+
+<!--Mobile menu-->
+<div class="fixed inset-0 bg-[#01081680] hidden" id="menu-backdrop"></div>
+
+<nav
+   class="absolute top-0 transition-all left-[-100%] linear w-[290px] max-w-full h-screen flex flex-col gap-8 bg-white p-4 overflow-y-auto" id="menu">
+   <img class="w-[160px]" src="img/logo.svg" alt="Logo">
+
+   <div class="flex flex-col grow gap-4">
+      <a href="#">Kurs kimlar uchun?</a>
+      <a href="#">Izohlar</a>
+      <a href="#">Tariflar</a>
+      <a href="#">FAQ</a>
+   </div>
+
+   <a class="flex items-center gap-2" href="tel:+998976282882">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path
+            d="M20.6286 22C18.1898 22 15.7397 21.433 13.2783 20.2989C10.8171 19.1648 8.55369 17.5651 6.48806 15.4996C4.43084 13.434 2.8352 11.1725 1.70112 8.71524C0.567039 6.25814 0 3.81021 0 1.37144C0 0.983206 0.129412 0.65752 0.388235 0.394382C0.647059 0.131461 0.970588 0 1.35882 0H5.57959C5.90635 0 6.19462 0.106657 6.44438 0.319971C6.69415 0.533069 6.853 0.796422 6.92094 1.11003L7.66279 4.91765C7.71413 5.27094 7.70334 5.57452 7.63044 5.82838C7.55732 6.08225 7.42619 6.29545 7.23703 6.468L4.24826 9.3775C4.72925 10.2584 5.27881 11.0917 5.89697 11.8774C6.51491 12.6629 7.18397 13.4132 7.90415 14.1282C8.61419 14.8385 9.36909 15.498 10.1689 16.1069C10.9686 16.7158 11.8322 17.2824 12.7597 17.8067L15.6637 14.8775C15.8662 14.6668 16.1114 14.519 16.3994 14.4343C16.6871 14.3497 16.9862 14.329 17.2965 14.3721L20.89 15.104C21.2167 15.1902 21.4834 15.357 21.6901 15.6041C21.8967 15.8513 22 16.1317 22 16.4453V20.6412C22 21.0294 21.8685 21.3529 21.6056 21.6118C21.3425 21.8706 21.0168 22 20.6286 22Z"
+            fill="#00B430"/>
+      </svg>
+
+      <span class="font-medium">+998 97 628 28 82</span>
+   </a>
+</nav>
+
+<script src="js/menu.js"></script>
+</body>
+</html>
