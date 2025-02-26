@@ -33,5 +33,13 @@ body {
 }
 
 .custom-shadow {
-  box-shadow: 0px 0px 30px 0px #EBEFF0;
+  box-shadow: 0 0 30px 0 #EBEFF0;
+}
+
+.bg-gradient {
+  background: linear-gradient(103.84deg, #E5FBEB 3.62%, #E9F7FD 50.63%, #EEFFF3 97%);
+}
+
+.button-gradient {
+  background: linear-gradient(90deg, #00B430 0%, #00A8BB 100%);
 }

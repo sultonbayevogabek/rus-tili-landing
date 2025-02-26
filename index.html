@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<div class="wrapper flex flex-col gap-[100px] pt-[8px] 800px:pt-[16px] 1200px:pt-[20px]">
+<div class="wrapper flex flex-col gap-3 800px:gap-[20px] 1200px:gap-[30px] pt-[8px] 800px:pt-[16px] 1200px:pt-[20px]">
    <header
       class="flex justify-between items-center rounded-full custom-shadow py-2 px-4 800px:py-2.5 800px:px-5 1200px:px-6 1200px:py-3 border border-[#E1E8EE]">
       <img class="w-[150px] 800px:w-[180px] 1200px:w-[205px]" src="img/logo.svg" alt="">
@@ -47,6 +47,82 @@
                fill="black"/>
       </svg>
    </header>
+
+   <section class="grid grid-cols-3 gap-[12px] 800px:gap-[24px] 1200px:gap-[30px]">
+      <div class="col-span-3 1200px:col-span-2 flex flex-col gap-[12px] 800px:gap-[24px] 1200px:gap-[30px]">
+         <div class="rounded-[20px] bg-gradient flex items-center relative">
+            <div class="flex flex-col gap-6 800px:gap-8 1200px:gap-10 p-[20px] 800px:p-[40px] 1200px:p-[60px]">
+               <h1 class="text-[24px] 800px:text-[28px] 1200px:text-[32px] font-semibold leading-[1.28]">
+                  Rus tilida hali ham gapira olmayapsizmi?
+               </h1>
+
+               <p class="text-[16px] 800px:text-[18px] leading-[1.5]">
+                  10 yillik interaktiv tajriba orqali Rus tilida natijaga chiqishni boshlang!
+               </p>
+
+               <button class="w-max h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full bg-white font-semibold text-xl 800px:text-[22px] 1200px:text-[24px]">
+                  Ro'yxatdan o'tish
+               </button>
+            </div>
+
+            <div class="h-full aspect-[328/466]">
+               <img
+                  class="h-full w-auto object-cover"
+                  src="img/mentor@1x.png"
+                  srcset="img/mentor@1x.png 1x, img/mentor@2x.png 2x"
+                  alt="">
+            </div>
+         </div>
+
+         <div class="grid grid-cols-3 gap-[12px] 800px:gap-[24px] 1200px:gap-[30px]">
+            <div class="flex flex-col gap-2 p-[16px] 800px:p-[22px] 1200px:p-[30px] text-center custom-shadow rounded-[20px]">
+               <div class="text-[28px] 800px:text-[32px] 1200px:text-[40px] font-semibold leading-[1]">
+                  1000<span class="text-[#00B430]">+</span>
+               </div>
+               <div class="text-[#00000099]">O'quvchilar aktiv tahsil oladi</div>
+            </div>
+            <div class="flex flex-col gap-2 p-[16px] 800px:p-[22px] 1200px:p-[30px] text-center custom-shadow rounded-[20px]">
+               <div class="text-[28px] 800px:text-[32px] 1200px:text-[40px] font-semibold leading-[1]">
+                  110<span class="text-[#00B430]">+</span>
+               </div>
+               <div class="text-[#00000099]">Darslar soni</div>
+            </div>
+            <div class="flex flex-col gap-2 p-[16px] 800px:p-[22px] 1200px:p-[30px] text-center custom-shadow rounded-[20px]">
+               <div class="text-[28px] 800px:text-[32px] 1200px:text-[40px] font-semibold leading-[1]">
+                  140<span class="text-[#00B430]">+</span>
+               </div>
+               <div class="text-[#00000099]">Darslar soni</div>
+            </div>
+         </div>
+      </div>
+
+      <form class="hidden 1200px:flex flex-col gap-[30px] rounded-[20px] p-4 800px:p-5 1200px:p-6 bg-gradient">
+         <h2 class="text-[16px] 800px:text-[18px] 1200px:text-xl">
+            "Rus tili" onlayn kurslari haqida ma'lumot uchun hoziroq ariza qoldiring
+         </h2>
+
+         <div class="flex flex-col gap-[24px] grow">
+            <label class="flex flex-col gap-2">
+               <span>Ismingiz</span>
+               <input class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="text" placeholder="Ismingizni kiriting">
+            </label>
+
+            <label class="flex flex-col gap-2">
+               <span>Telefon raqamingiz</span>
+               <input class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="tel" value="+998">
+            </label>
+
+            <label class="flex flex-col gap-2">
+               <span>Telegram foydalanuvchi nomi</span>
+               <input class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="text" placeholder="@username">
+            </label>
+         </div>
+
+         <button class="w-full h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
+            Yuborish
+         </button>
+      </form>
+   </section>
 </div>
 
 
