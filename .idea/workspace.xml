@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d93ed0c-221e-4021-9c53-2daaeb0166da" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/img/mentor-with-book@1x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/mentor-with-book@2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/zarina@1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/zarina@2x.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -104,7 +104,7 @@
       <workItem from="1740506851098" duration="306000" />
       <workItem from="1740507260938" duration="5358000" />
       <workItem from="1740587026214" duration="7519000" />
-      <workItem from="1740674141989" duration="10315000" />
+      <workItem from="1740674141989" duration="10835000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -154,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740681881241</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit">
+      <option name="closed" value="true" />
+      <created>1740684477840</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740684477840</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
