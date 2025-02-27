@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   hamburger.addEventListener('click', () => {
     mobileMenuBackdrop.classList.remove('hidden');
-    mobileMenu.classList.remove('left-[-100%]');
-    mobileMenu.classList.add('left-0');
+    mobileMenu.classList.remove('-translate-x-full');
   })
 
   mobileMenuBackdrop.addEventListener('click', () => {
@@ -23,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   function closeMenu() {
-    mobileMenu.classList.add('left-[-100%]');
+    mobileMenu.classList.add('-translate-x-full');
     mobileMenuBackdrop.classList.add('hidden');
   }
 })

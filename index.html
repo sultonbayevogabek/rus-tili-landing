@@ -35,7 +35,8 @@
          <span class="font-medium">+998 97 628 28 82</span>
       </a>
 
-      <svg id="hamburger" class="block 1100px:hidden w-5 cursor-pointer" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg id="hamburger" class="block 1100px:hidden w-5 cursor-pointer" viewBox="0 0 16 12" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
          <path fill-rule="evenodd" clip-rule="evenodd"
                d="M15.75 6C15.75 5.5858 15.4142 5.25 15 5.25H1C0.58579 5.25 0.25 5.5858 0.25 6C0.25 6.4142 0.58579 6.75 1 6.75H15C15.4142 6.75 15.75 6.4142 15.75 6Z"
                fill="black"/>
@@ -50,8 +51,9 @@
 
    <section class="grid grid-cols-3 gap-[12px] 800px:gap-[24px] 1200px:gap-[30px]">
       <div class="col-span-3 1200px:col-span-2 flex flex-col gap-[12px] 800px:gap-[24px] 1200px:gap-[30px]">
-         <div class="rounded-[20px] bg-gradient flex items-center relative">
-            <div class="flex flex-col gap-6 800px:gap-8 1200px:gap-10 p-[20px] 800px:p-[40px] 1200px:p-[60px]">
+         <div class="rounded-[20px] bg-gradient flex flex-col 600px:flex-row items-center relative">
+            <div
+               class="flex flex-col gap-6 800px:gap-8 1200px:gap-10 p-[20px] 800px:p-[40px] 1200px:p-[60px] text-center 600px:text-left">
                <h1 class="text-[24px] 800px:text-[28px] 1200px:text-[32px] font-semibold leading-[1.28]">
                   Rus tilida hali ham gapira olmayapsizmi?
                </h1>
@@ -60,43 +62,50 @@
                   10 yillik interaktiv tajriba orqali Rus tilida natijaga chiqishni boshlang!
                </p>
 
-               <button class="w-max h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full bg-white font-semibold text-xl 800px:text-[22px] 1200px:text-[24px]">
+               <button
+                  class="w-full 600px:w-max h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[30px] 800px:px-[45px] 1200px:px-[60px] uppercase rounded-full bg-white font-semibold text-xl 800px:text-[22px] 1200px:text-[24px]">
                   Ro'yxatdan o'tish
                </button>
             </div>
 
-            <div class="h-full aspect-[328/466]">
+            <div class="hidden 600px:block h-full aspect-[328/466]">
                <img
                   class="h-full w-auto object-cover"
                   src="img/mentor@1x.png"
                   srcset="img/mentor@1x.png 1x, img/mentor@2x.png 2x"
                   alt="">
             </div>
+
+            <img class="block 600px:hidden" src="img/mobile-mentor.png" alt="">
          </div>
 
-         <div class="grid grid-cols-3 gap-[12px] 800px:gap-[24px] 1200px:gap-[30px]">
-            <div class="flex flex-col gap-2 p-[16px] 800px:p-[22px] 1200px:p-[30px] text-center custom-shadow rounded-[20px]">
-               <div class="text-[28px] 800px:text-[32px] 1200px:text-[40px] font-semibold leading-[1]">
-                  1000<span class="text-[#00B430]">+</span>
-               </div>
-               <div class="text-[#00000099]">O'quvchilar aktiv tahsil oladi</div>
-            </div>
-            <div class="flex flex-col gap-2 p-[16px] 800px:p-[22px] 1200px:p-[30px] text-center custom-shadow rounded-[20px]">
+         <div class="grid grid-cols-6 gap-[12px] 800px:gap-[24px] 1200px:gap-[30px]">
+            <div
+               class="col-span-3 600px:col-span-2 flex flex-col justify-center gap-2 p-[16px] 800px:p-[22px] 1200px:p-[30px] text-center custom-shadow rounded-[20px] ">
                <div class="text-[28px] 800px:text-[32px] 1200px:text-[40px] font-semibold leading-[1]">
                   110<span class="text-[#00B430]">+</span>
                </div>
                <div class="text-[#00000099]">Darslar soni</div>
             </div>
-            <div class="flex flex-col gap-2 p-[16px] 800px:p-[22px] 1200px:p-[30px] text-center custom-shadow rounded-[20px]">
+            <div
+               class="col-span-3 600px:col-span-2 flex flex-col justify-center gap-2 p-[16px] 800px:p-[22px] 1200px:p-[30px] text-center custom-shadow rounded-[20px] ">
                <div class="text-[28px] 800px:text-[32px] 1200px:text-[40px] font-semibold leading-[1]">
                   140<span class="text-[#00B430]">+</span>
                </div>
                <div class="text-[#00000099]">Darslar soni</div>
             </div>
+            <div
+               class="col-span-6 600px:col-span-2 flex flex-col justify-center gap-2 p-[16px] 800px:p-[22px] 1200px:p-[30px] text-center custom-shadow rounded-[20px] ">
+               <div class="text-[28px] 800px:text-[32px] 1200px:text-[40px] font-semibold leading-[1]">
+                  1000<span class="text-[#00B430]">+</span>
+               </div>
+               <div class="text-[#00000099]">O'quvchilar aktiv tahsil oladi</div>
+            </div>
          </div>
       </div>
 
-      <form class="hidden 1200px:flex flex-col gap-[30px] rounded-[20px] p-4 800px:p-5 1200px:p-6 bg-gradient">
+      <form
+         class="flex col-span-3 600px:hidden 1200px:flex 1200px:col-span-1 flex-col gap-[30px] rounded-[20px] p-4 800px:p-5 1200px:p-6 bg-gradient">
          <h2 class="text-[16px] 800px:text-[18px] 1200px:text-xl">
             "Rus tili" onlayn kurslari haqida ma'lumot uchun hoziroq ariza qoldiring
          </h2>
@@ -104,7 +113,8 @@
          <div class="flex flex-col gap-[24px] grow">
             <label class="flex flex-col gap-2">
                <span>Ismingiz</span>
-               <input class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="text" placeholder="Ismingizni kiriting">
+               <input class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="text"
+                      placeholder="Ismingizni kiriting">
             </label>
 
             <label class="flex flex-col gap-2">
@@ -114,11 +124,13 @@
 
             <label class="flex flex-col gap-2">
                <span>Telegram foydalanuvchi nomi</span>
-               <input class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="text" placeholder="@username">
+               <input class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="text"
+                      placeholder="@username">
             </label>
          </div>
 
-         <button class="w-full h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
+         <button
+            class="w-full h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
             Yuborish
          </button>
       </form>
@@ -127,11 +139,12 @@
 
 
 <!--Mobile menu-->
-<div class="fixed inset-0 bg-[#01081680] hidden" id="menu-backdrop"></div>
+<div class="fixed inset-0 bg-black opacity-30 hidden transition-all duration-300" id="menu-backdrop"></div>
 
 <nav
    style="transition: 0.4s all ease-in-out"
-   class="absolute top-0 left-[-100%] w-[290px] max-w-full h-screen flex flex-col gap-8 bg-white p-4 overflow-y-auto" id="menu">
+   class="fixed left-0 top-0 w-[290px] max-w-full h-screen flex flex-col gap-8 bg-white p-4 transform -translate-x-full transition-transform duration-300 overflow-auto"
+   id="menu">
    <img class="w-[160px]" src="img/logo.svg" alt="Logo">
 
    <div class="flex flex-col grow gap-4">
