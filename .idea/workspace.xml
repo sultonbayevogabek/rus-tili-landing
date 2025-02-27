@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d93ed0c-221e-4021-9c53-2daaeb0166da" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/img/book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/masters.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/travel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mentor-with-book@1x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mentor-with-book@2x.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -51,7 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/sultonbayevogabek/Orders/rus-tili-landing/js",
+    "last_opened_file_path": "/Users/sultonbayevogabek/Orders/rus-tili-landing/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,8 +60,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css" />
     </key>
@@ -108,7 +104,7 @@
       <workItem from="1740506851098" duration="306000" />
       <workItem from="1740507260938" duration="5358000" />
       <workItem from="1740587026214" duration="7519000" />
-      <workItem from="1740674141989" duration="7722000" />
+      <workItem from="1740674141989" duration="10315000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -150,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740676992261</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <option name="closed" value="true" />
+      <created>1740681881241</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740681881241</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
