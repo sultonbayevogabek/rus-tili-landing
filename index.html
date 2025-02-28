@@ -361,7 +361,7 @@
         <h2 class="text-[20px] 800px:text-[24px] 1200px:text-[28px] font-semibold leading-[1.28]">KAFOLAT</h2>
       </div>
 
-      <div class="grid grid-cols-2 gap-[12px] 800px:gap-[20px] 1200px:gap-[24px]">
+      <div class="grid grid-cols-2 gap-[12px] 800px:gap-[20px] 1200px:gap-[24px] flex-grow">
         <div class="col-span-2 600px:col-span-1 1200px:col-span-2 flex flex-col 1200px:flex-row 1200px:items-center gap-3 p-3 800px:p-4 1200px:p-6 bg-white rounded-[20px]">
           <svg class="w-8 800px:w-9 1200px:w-10 shrink-0" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.70498 18.3334L14.4937 25.1218C14.7415 25.3698 14.8637 25.6599 14.8604 25.9922C14.8573 26.3244 14.7265 26.6198 14.4679 26.8784C14.2093 27.1198 13.9165 27.2448 13.5896 27.2534C13.2629 27.2618 12.9703 27.1368 12.7116 26.8784L5.22123 19.388C5.06512 19.2319 4.95512 19.0673 4.89123 18.8943C4.82707 18.7212 4.79498 18.5343 4.79498 18.3334C4.79498 18.1326 4.82707 17.9456 4.89123 17.7726C4.95512 17.5995 5.06512 17.4349 5.22123 17.2788L12.7116 9.78842C12.9425 9.55786 13.2282 9.43981 13.5687 9.43425C13.9096 9.42897 14.2093 9.54703 14.4679 9.78842C14.7265 10.047 14.8558 10.3441 14.8558 10.6797C14.8558 11.0149 14.7265 11.3119 14.4679 11.5705L7.70498 18.3334ZM16.5512 19.5834L22.0896 25.1218C22.3376 25.3698 22.46 25.6599 22.4566 25.9922C22.4533 26.3244 22.3225 26.6198 22.0641 26.8784C21.8055 27.1198 21.5128 27.2448 21.1858 27.2534C20.8589 27.2618 20.5661 27.1368 20.3075 26.8784L12.8175 19.388C12.6614 19.2319 12.5512 19.0673 12.4871 18.8943C12.4229 18.7212 12.3908 18.5343 12.3908 18.3334C12.3908 18.1326 12.4229 17.9456 12.4871 17.7726C12.5512 17.5995 12.6614 17.4349 12.8175 17.2788L20.3075 9.78842C20.5383 9.55786 20.8241 9.43981 21.165 9.43425C21.5058 9.42897 21.8055 9.54703 22.0641 9.78842C22.3225 10.047 22.4516 10.3441 22.4516 10.6797C22.4516 11.0149 22.3225 11.3119 22.0641 11.5705L16.5512 17.0834H27.9166C30.1047 17.0834 31.9711 17.8559 33.5158 19.4009C35.0608 20.9456 35.8333 22.812 35.8333 25.0001V29.5834C35.8333 29.9381 35.7136 30.2351 35.4741 30.4743C35.235 30.7137 34.938 30.8334 34.5833 30.8334C34.2286 30.8334 33.9316 30.7137 33.6925 30.4743C33.453 30.2351 33.3333 29.9381 33.3333 29.5834V25.0001C33.3333 23.5043 32.8044 22.2276 31.7466 21.1701C30.6891 20.1123 29.4125 19.5834 27.9166 19.5834H16.5512Z" fill="#00B430"/>
@@ -394,6 +394,49 @@
           class="w-full h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
           Ro'yxatdan o'tish
         </button>
+      </div>
+    </div>
+
+    <div
+       class="col-span-2 1200px:col-span-1 rounded-[20px] bg-gradient p-4 800px:p-6 1200px:p-[30px] flex flex-col gap-4 1200px:gap-5">
+      <div class="flex items-center justify-between gap-5">
+        <h2 class="text-[16px] 800px:text-[18px] 1200px:text-[20px] font-semibold leading-[1.28]">
+          Bizning kurslar litsenziya va davlat tasdiqidan o'tgan ish rejasi orqali olib boriladi
+        </h2>
+        <div class="flex items-center gap-2">
+          <div onclick="navigate('certificates', '<')"
+               class="w-9 aspect-square rounded-full grid place-content-center bg-green-500 cursor-pointer">
+            <svg class="translate-x-[-2px]" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.64053 0.346844C9.11982 0.809304 9.11982 1.55912 8.64053 2.02158L2.96297 7.50002L8.64053 12.9785C9.11982 13.441 9.11982 14.1907 8.64053 14.6531C8.16124 15.1156 7.38429 15.1156 6.90499 14.6531L0.359458 8.33734C-0.119819 7.87486 -0.119819 7.12517 0.359458 6.6627L6.90499 0.346844C7.38429 -0.115615 8.16124 -0.115615 8.64053 0.346844Z"
+                    fill="white"/>
+            </svg>
+          </div>
+          <div onclick="navigate('certificates', '>')"
+               class="w-9 aspect-square rounded-full grid place-content-center bg-green-500 cursor-pointer">
+            <svg class="translate-x-[2px]" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.35947 0.346844C-0.119823 0.809304 -0.119823 1.55912 0.35947 2.02158L6.03703 7.50002L0.35947 12.9785C-0.119823 13.441 -0.119823 14.1907 0.35947 14.6531C0.838764 15.1156 1.61571 15.1156 2.09501 14.6531L8.64054 8.33734C9.11982 7.87486 9.11982 7.12517 8.64054 6.6627L2.09501 0.346844C1.61571 -0.115615 0.838764 -0.115615 0.35947 0.346844Z"
+                    fill="white"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="splide flex-grow" id="certificates-slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide aspect-[388/555] h-full">
+              <img class="w-full" src="img/certificate.jpg" alt="">
+            </li>
+            <li class="splide__slide aspect-[388/555] h-full">
+              <img class="w-full" src="img/certificate.jpg" alt="">
+            </li>
+            <li class="splide__slide aspect-[388/555] h-full">
+              <img class="w-full" src="img/certificate.jpg" alt="">
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
