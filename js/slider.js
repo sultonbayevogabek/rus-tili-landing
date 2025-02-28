@@ -1,7 +1,6 @@
-const splide = new Splide('.splide', {
+const commentsSlider = new Splide('#comments-slider', {
   perPage: 4,
   gap: 30,
-  rewind: true,
   arrows: false,
   pagination: false,
   breakpoints: {
@@ -14,7 +13,15 @@ const splide = new Splide('.splide', {
       gap: 12
     }
   },
-  autoplay: true
+  autoplay: true,
+  type: 'loop'
 });
 
-splide?.mount();
+commentsSlider?.mount();
+
+function navigate(slider, direction) {
+  if (slider === 'comments') {
+    commentsSlider?.go(direction)
+    commentsSlider.Components.Autoplay.pause();
+  }
+}
