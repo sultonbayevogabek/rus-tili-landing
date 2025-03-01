@@ -37,6 +37,11 @@ const modalBackdrop = document.querySelector('#form-backdrop');
 const modalCloserElements = document.querySelectorAll('[data-modal-close]');
 const forms = document.querySelectorAll('[data-form]');
 const successModal = document.querySelector('#success-backdrop');
+const joinChannelBtn = document.querySelector('#join-channel');
+
+joinChannelBtn.addEventListener('click', () => {
+  window.location.href = 'https://t.me/kunuz'
+})
 
 registerButtons.forEach(button => {
   button.addEventListener('click', () => {
