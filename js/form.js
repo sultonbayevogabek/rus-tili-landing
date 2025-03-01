@@ -85,7 +85,7 @@ forms.forEach(form => {
     const formAlert = e.target.querySelector('[data-form-alert]');
     const name = e.target.querySelector('[data-form-name]').value.trim();
     const phone = e.target.querySelector('[data-form-phone]').value?.replace(/[^0-9]/g, '');
-    const telegram = e.target.querySelector('[data-form-telegram]').value?.replace(/[^0-9]/g, '');
+    const telegram = e.target.querySelector('[data-form-telegram]').value?.trim();
 
     if (!name.length) {
       formAlert.textContent = 'Ismingizni kiriting';
