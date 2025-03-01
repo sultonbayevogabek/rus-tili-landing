@@ -64,6 +64,7 @@
           </p>
 
           <button
+            data-open-form
             class="w-full 600px:w-max h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[30px] 800px:px-[45px] 1200px:px-[60px] uppercase rounded-full bg-white font-semibold text-xl 800px:text-[22px] 1200px:text-[24px]">
             Ro'yxatdan o'tish
           </button>
@@ -106,32 +107,40 @@
     </div>
 
     <form
+      data-form
       class="flex col-span-3 600px:hidden 1200px:flex 1200px:col-span-1 flex-col gap-[30px] rounded-[20px] p-4 800px:p-5 1200px:p-6 bg-gradient">
       <h2 class="text-[16px] 800px:text-[18px] 1200px:text-xl">
         "Rus tili" onlayn kurslari haqida ma'lumot olish uchun hoziroq ariza qoldiring
       </h2>
 
+      <div
+        data-form-alert
+        class="p-4 text-center font-medium text-red-600 rounded-lg bg-red-100 hidden">
+      </div>
+
       <div class="flex flex-col gap-[24px] grow">
         <label class="flex flex-col gap-2">
           <span>Ismingiz</span>
-          <input class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="text"
+          <input data-form-name class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="text"
                  placeholder="Ismingizni kiriting">
         </label>
 
-        <label class="flex flex-col gap-2">
+        <label class="flex flex-col gap-2 relative">
           <span>Telefon raqamingiz</span>
-          <input class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="tel"
-                 value="+998">
+          <input data-form-phone class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA] pl-[5.5ch] phone" type="tel">
+
+          <input class="w-[7ch] absolute left-0 bottom-0 h-12 rounded-2xl px-3 bg-transparent" type="tel" disabled value="+998">
         </label>
 
         <label class="flex flex-col gap-2">
           <span>Telegram foydalanuvchi nomi</span>
-          <input class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="text"
+          <input data-form-telegram class="w-full h-12 rounded-2xl px-3 bg-white placeholder:text-[#BAC2CA]" type="text" maxlength="20"
                  placeholder="@username">
         </label>
       </div>
 
       <button
+        data-form-button
         class="w-full h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
         Yuborish
       </button>
@@ -386,8 +395,7 @@
               fill="#00B430"/>
           </svg>
 
-          <p class="text-[16px] 1200px:text-[18px]">Kurs darsi birinchi darsdan gapirishga qaratilganiga kafolat
-            beramiz</p>
+          <p class="text-[16px] 1200px:text-[18px]">Kurs birinchi darsdan gapirishga qaratilganiga kafolat beramiz</p>
         </div>
 
         <div
@@ -399,8 +407,7 @@
               fill="#00B430"/>
           </svg>
 
-          <p class="text-[16px] 1200px:text-[18px]">Kurs darsi birinchi darsdan gapirishga qaratilganiga kafolat
-            beramiz</p>
+          <p class="text-[16px] 1200px:text-[18px]">Kursga qo'shilib 3 - oydan natija sezishni boshlaysiz!</p>
         </div>
       </div>
 
@@ -408,6 +415,7 @@
         <p class="text-[#454D55] text-center">Agar siz hoziroq ariza qoldirsangiz bonuslarga ega bo'lasiz</p>
 
         <button
+          data-open-form
           class="w-full h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
           Ro'yxatdan o'tish
         </button>
@@ -493,6 +501,7 @@
         </div>
 
         <button
+          data-open-form
           class="col-span-3 1200px:col-span-1 w-full h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
           Ariza yuborish
         </button>
@@ -574,6 +583,7 @@
         </div>
 
         <button
+          data-open-form
           class="col-span-3 1200px:col-span-1 w-full h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
           Ariza yuborish
         </button>
@@ -653,6 +663,7 @@
         </div>
 
         <button
+          data-open-form
           class="col-span-3 1200px:col-span-1 w-full h-[50px] 800px:h-[60px] 1200px:h-[70px] px-[60px] uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
           Ariza yuborish
         </button>
@@ -770,39 +781,54 @@
 </nav>
 
 <div class="fixed inset-[0] w-screen max-h-screen flex justify-center items-center bg-[#0000004d] p-3 hidden"
-     id="form-backdrop">
+     id="form-backdrop" data-modal-close>
   <div class="w-[800px] max-w-[100%] max-h-full grid grid-cols-2 rounded-[20px] overflow-auto">
     <div class="col-span-2 900px:col-span-1 p-4 800px:p-5 1200px:p-6 bg-white">
       <form
+        data-form
         class="flex flex-col gap-[24px]">
         <h2 class="text-[16px] 800px:text-[18px] 1200px:text-[22px] font-semibold">
           Ariza yuborish
         </h2>
+
+        <div
+          data-form-alert
+          class="p-4 text-center font-medium text-red-600 rounded-lg bg-red-100 hidden">
+        </div>
 
         <div class="flex flex-col gap-[24px] grow">
           <label class="flex flex-col gap-2">
             <span>Ismingiz</span>
             <input class="w-full h-12 rounded-2xl px-3 border border-gray-300 bg-white placeholder:text-[#BAC2CA]"
                    type="text"
-                   placeholder="Ismingizni kiriting">
+                   placeholder="Ismingizni kiriting"
+                   data-form-name
+            >
           </label>
 
-          <label class="flex flex-col gap-2">
+          <label class="flex flex-col gap-2 relative">
             <span>Telefon raqamingiz</span>
-            <input class="w-full h-12 rounded-2xl px-3 border border-gray-300 bg-white placeholder:text-[#BAC2CA]"
-                   type="tel"
-                   value="+998">
+
+            <input
+              data-form-phone
+              class="w-full h-12 rounded-2xl px-3 bg-white border border-gray-300 placeholder:text-[#BAC2CA] pl-[5.5ch] phone" type="tel">
+
+            <input class="w-[7ch] absolute left-0 bottom-0 h-12 rounded-2xl px-3 bg-transparent" type="tel" disabled value="+998">
           </label>
 
           <label class="flex flex-col gap-2">
             <span>Telegram foydalanuvchi nomi</span>
             <input class="w-full h-12 rounded-2xl px-3 border border-gray-300 bg-white placeholder:text-[#BAC2CA]"
                    type="text"
-                   placeholder="@username">
+                   maxlength="20"
+                   data-form-telegram
+                   placeholder="@username"
+            >
           </label>
         </div>
 
         <button
+          data-form-button
           class="w-full h-[50px] 1200px:h-[60px] px-[60px] mt-5 uppercase rounded-full font-semibold text-xl 800px:text-[22px] 1200px:text-[24px] text-white button-gradient">
           Yuborish
         </button>
@@ -836,7 +862,7 @@
 </div>
 
 <div class="fixed inset-[0] w-screen max-h-screen flex justify-center items-center hidden bg-[#0000004d] p-3"
-     id="success-backdrop">
+     id="success-backdrop" data-modal-close="">
   <div
     class="rounded-[20px] overflow-auto w-[512px] max-w-full flex flex-col items-center gap-5 p-4 800px:p-5 1200px:p-6 bg-white text-center">
     <img class="w-[70px] 800px:w-[80px] 1200px:w-[96px]" src="img/telegram.png" alt="">
@@ -853,6 +879,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/form.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/accordion.js"></script>
 <script src="js/menu.js"></script>
