@@ -40,7 +40,7 @@ const successModal = document.querySelector('#success-backdrop');
 const joinChannelBtn = document.querySelector('#join-channel');
 
 joinChannelBtn.addEventListener('click', () => {
-  window.location.href = 'https://t.me/kunuz'
+  window.location.href = 'https://t.me/zarinaismailovna'
 })
 
 registerButtons.forEach(button => {
