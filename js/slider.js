@@ -40,7 +40,6 @@ const certificatesSlider = new Splide('#certificates-slider', {
       gap: 12
     }
   },
-  autoplay: true,
   type: 'loop'
 });
 
@@ -56,3 +55,11 @@ function navigate(slider, direction) {
     certificatesSlider.Components.Autoplay.pause();
   }
 }
+
+const sliderItems = document.querySelectorAll('#comments-slider .splide__slide');
+
+sliderItems.forEach((item) => {
+  item.addEventListener('touched', (e) => {
+    console.log('clicked', e);
+  })
+})
