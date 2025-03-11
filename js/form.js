@@ -36,10 +36,9 @@ const registerButtons = document.querySelectorAll('[data-open-form]');
 const modalBackdrop = document.querySelector('#form-backdrop');
 const modalCloserElements = document.querySelectorAll('[data-modal-close]');
 const forms = document.querySelectorAll('[data-form]');
-const successModal = document.querySelector('#success-backdrop');
 const joinChannelBtn = document.querySelector('#join-channel');
 
-joinChannelBtn.addEventListener('click', () => {
+joinChannelBtn?.addEventListener('click', () => {
   window.location.href = 'https://t.me/zarinaismailovna'
 })
 
@@ -53,18 +52,13 @@ function closeModal() {
   modalBackdrop.classList.add('hidden');
 }
 
-function openSuccess() {
-  successModal.classList.remove('hidden');
-}
-
-function closeSuccess() {
-  successModal.classList.add('hidden');
+function redirect() {
+  window.location.href = './thankyou.html'
 }
 
 window.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     closeModal();
-    closeSuccess();
   }
 })
 
@@ -72,7 +66,6 @@ modalCloserElements.forEach(el => {
   el.addEventListener('click', e => {
     if (e.target.hasAttribute('data-modal-close')) {
       closeModal();
-      closeSuccess();
     }
   })
 })
@@ -128,7 +121,7 @@ forms.forEach(form => {
       submitButton.removeAttribute('disabled');
       submitButton.textContent = "Ro'yxatdan o'tish";
       closeModal();
-      openSuccess();
+      redirect();
     }
   })
 })
