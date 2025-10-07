@@ -44,12 +44,12 @@ joinChannelBtn?.addEventListener('click', () => {
 
 registerButtons.forEach(button => {
   button.addEventListener('click', () => {
-    modalBackdrop.classList.remove('hidden')
+    modalBackdrop.classList.remove('invisible');
   })
 })
 
 function closeModal() {
-  modalBackdrop.classList.add('hidden');
+  modalBackdrop.classList.add('invisible');
 }
 
 function redirect() {
